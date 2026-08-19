@@ -318,6 +318,18 @@ h6 {
   color: var(--accent-color);
 }
 
+.header .navmenu a,
+.header .navmenu a:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header .navmenu a:hover,
+.header .navmenu .active,
+.header .navmenu .active:focus {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
 .header .navmenu {
   display: block;
   visibility: visible;
@@ -1094,7 +1106,10 @@ body {
 }
 
 .header {
-  background: rgba(255, 255, 255, 0.9);
+  background-image: linear-gradient(rgba(63, 52, 78, 0.72), rgba(112, 77, 121, 0.62)), url("../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
   border-right: 1px solid rgba(233, 137, 181, 0.18);
   box-shadow: 8px 0 30px rgba(109, 96, 137, 0.08);
   backdrop-filter: blur(16px);
@@ -1106,12 +1121,12 @@ body {
 }
 
 .header .logo h1 {
-  color: var(--heading-color);
+  color: #ffffff;
 }
 
 .header .social-links a {
   background: #fff4f8;
-  color: var(--heading-color);
+  color: #6f557b;
   box-shadow: 0 4px 12px rgba(109, 96, 137, 0.08);
 }
 
